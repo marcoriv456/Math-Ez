@@ -1,4 +1,4 @@
-.tool-section{
+#tool-section{
     height: 400vh;
 
     position: sticky;
@@ -11,7 +11,7 @@
 
 /*-----------------TITLE-----------------*/
 
-.tool-section .title{
+#tool-section .title{
     padding: 2rem;
 
     z-index: 0;
@@ -19,346 +19,162 @@
     background-color: #6babff;
 
     font-size: 2rem;
+    max-height: 10rem;
 }
 
-.tool-section .title span{
+#tool-section .title span{
     font-family: "Times New Roman", sans-serif;
     font-weight: 100;
 }
 
 /*-----------------TITLE-----------------*/
 
-/*-----------------CARD-SECTION-----------------*/
-
-.tool-section .card-section{
+/*-----------------PANEL CONTAINER-----------------*/
+#tool-section .panel-container{
     max-width: 1080px;
-    height:45rem;
+    height: 250vh;
+}
+/*-----------------PANEL CONTAINER-----------------*/
+
+/*----------------------PANEL----------------------*/
+
+
+#tool-section .panel{
+    padding: 2rem;
+
 
     position: sticky;
-    top: calc((100vh - 40rem)/2);
-    z-index: 0;
-
-    display: flex;
-    overflow-x: auto;
-
-    animation: fade-in-fade-out ease both;
-    animation-timeline:view();
-}
-
-
-
-/*-----------------CARD-SECTION-----------------*/
-
-/*---------------------CARD--INTERNAL ELEMENTS---------------------*/
-
-.tool-section .card{
-    min-width: 25rem;
-    max-height: 100%;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 20px;
-
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    overflow: hidden;
-    outline: 0.3rem solid #000;
-
-    --card-color:transparent;
-    background-color: var(--card-color);
-
-    animation: pass ease both;
-    view-timeline:--card inline;
-    animation-timeline:--card;
-    animation-range:contain 0% contain 100%;
-    /*z-index: 1;*/
-
-}
-
-.tool-section .card:first-child{
-    margin-left:calc((1080px - 25rem)/2);
-}
-/*.tool-section .card:last-child{*/
-/*    margin-right: calc((1080px - 25rem)/2);;*/
-/*    !*width: calc((1080px - 25rem)/2);;*!*/
-/*}*/
-
-.tool-section .card .blur-overlay{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    pointer-events: none;
-
-    background-color: transparent;
-
-    animation: blur ease-in-out both;
-    animation-timeline:--card;
-    animation-range:contain 0% contain 100%;
-}
-
-.tool-section .card img{
-    height: 100%;
-    max-height: 30rem;
-    width: 100%;
-    object-fit: contain;
-
-    position: relative;
-    z-index: 3;
-
-    transition: transform 1s ease, filter 1s ease;
-}
-
-.tool-section .card h3{
-    font-size: 3rem;
-    text-align: center;
-}
-
-.tool-section .card a:hover img{
-    transform:scale(1.2);
-    filter: invert() drop-shadow(1rem 1rem 0 var(--card-color));
-}
-
-.tool-section .card:has(a:hover) {
-    z-index: 1;
-    overflow: visible;
-}
-
-.tool-section .card a:hover ~ .screen-overlay{
-    opacity: 1;
-    backdrop-filter: blur(10px);
-}
-/*---------------------CARD--INTERNAL ELEMENTS---------------------*/
-
-/*---------------------CARD--OUTER ELEMENTS---------------------*/
-/*----INFO----*/
-.tool-section .card .card__info{
-    width: 100vw;
-
-    position: fixed;
-    bottom: 0;
-    left: 0;
-
-    display: flex;
-    justify-content: center;
-
-    animation: fade linear both;
-    animation-timeline:--card;
-    animation-range:contain 0% contain 100%;
-}
-
-.tool-section .card .card__info p{
-    max-width: 1080px;
-
-    font-family: "Times New Roman",sans-serif;
-    text-align: center;
-    font-size: 1.7rem;
-}
-/*----INFO----*/
-
-/*--------SCREEN OVERLAY--------*/
-
-.tool-section .screen-overlay{
-    width: 100vw;
-    height: 100vh;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    pointer-events: none;
-
-    display: grid;
-    grid-template:auto auto/ auto auto;
-    place-content: space-between;
-
-    background-color: #0006;
-    opacity: 0;
-
-    transition: opacity 1s ease;
-}
-/*------SCREEN__TOPIC------*/
-.tool-section .screen-overlay .screen__topic{
-    width: 30rem;
-    height: 15rem;
-    margin: 2rem;
+    top: 10rem;
+    height: fit-content;
 
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 2fr;
-    place-items: start;
+    grid-template-rows: 1fr auto auto;
+
+    gap: 2rem;
+
 }
-.tool-section .screen-overlay .screen__topic img{
+#tool-section .panel > img{
     width: 100%;
 
+    grid-row: span 3;
     object-fit: contain;
+
+    filter: drop-shadow(1rem 1rem 0 var(--panel-theme-color));
+}
+
+#tool-section .panel h3,
+#tool-section .panel p{
+    text-align: center;
+}
+#tool-section .panel h3{
+    font-size: 2.5rem;
+}
+#tool-section .panel p{
+    font-size: 2rem;
+    font-family: "Times New Roman", sans-serif;
+}
+
+/*------------PANEL FEATURES------------*/
+#tool-section .panel__feature__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+#tool-section .panel__feature{
+    width: 100%;
+    display: grid;
+    grid-template: auto auto/1fr 2fr;
+
+    text-decoration: none;
+    color: black;
+
+    transition: transform .5s ease;
+}
+
+#tool-section .panel__feature:hover{
+    transform: scale(1.1);
+}
+
+#tool-section .panel__feature img{
+    width: 100%;
+
+    grid-row: span 2;
+    place-self: center;
+
+    object-fit: contain;
+
+    filter: drop-shadow(0.5rem 0.5rem 0 var(--panel-theme-color));
+}
+
+#tool-section .panel__feature p,
+#tool-section .panel__feature h4{
+    font-family: "Lato", sans-serif;
+    text-align: start;
+}
+#tool-section .panel__feature h4{
+    font-size: 1.7rem;
+}
+#tool-section .panel__feature p{
+    font-size: 1.2rem;
+}
+/*------------PANEL FEATURES------------*/
+
+
+
+#tool-section .panel-container .panel__in-development-advice{
+    width: 30rem;
+    border-radius: 20px;
+    padding: 2rem;
+
+
+    position: sticky;
+    top: calc(100vh - 14rem);
+
+    display: grid;
+    grid-template: auto auto/1fr 2fr;
+
+    background-color: #FFE436;
+}
+
+
+#tool-section .panel-container .panel__in-development-advice img{
+    width: 100%;
+    height: 100%;
+
     grid-row: span 2;
 
-    filter: drop-shadow(0.2rem 0.2rem 0 white);
+    object-fit: contain;
 }
-.tool-section .screen-overlay .screen__topic h4{
+#tool-section .panel-container .panel__in-development-advice h4{
     font-size: 2rem;
 }
-.tool-section .screen-overlay .screen__topic p{
-    align-self: start;
+
+#tool-section .panel-container .panel__in-development-advice p{
     font-size: 1.5rem;
 }
-.tool-section .screen-overlay .screen__topic h4 , .tool-section .screen-overlay .screen__topic p{
-    color: white;
-}
-/*----IN-DEVELOPMENT-VARIANT----*/
-.tool-section .screen-overlay .screen__topic--in-development{
-    background-color: var(--card-color);
-    border-radius: 20px;
-}
-.tool-section .screen-overlay .screen__topic--in-development p, .tool-section .screen-overlay .screen__topic--in-development h4{
-    color: black;
-}
-.tool-section .screen-overlay .screen__topic--in-development img{
-    filter: none;
-}
-/*----IN-DEVELOPMENT-VARIANT----*/
-
-/*------SCREEN__TOPIC------*/
-
-/*------ADVICE------*/
-.tool-section .screen-overlay .advice--container{
-    width: 100vw;
-
-    position:absolute;
-    bottom: calc((100vh - 45rem)/2);
-
-    display: flex;
-    justify-content: center;
-}
-.tool-section .screen-overlay .advice--container p{
-    background-color: white;
-    filter: drop-shadow(1rem 1rem 0 var(--card-color));
-    font-size: 3rem;
-    border: none;
-}
-/*------ADVICE------*/
-/*--------SCREEN OVERLAY--------*/
-/*---------------------CARD--OUTER ELEMENTS---------------------*/
 
 
-/*---------------------CARD--VARIANTS---------------------*/
-.tool-section .card--algebra{
-    --card-color: #FFC107;
-}
-.tool-section .card--logic{
-    --card-color: #4caf50;
-}
-.tool-section .card--calculus{
-    --card-color: #ff5722;
-}
-.tool-section .card--graphics{
-    --card-color: #00bcd4;
-}
-.tool-section .card--measures{
-    --card-color: #3f51b5;
-}
-.tool-section .card-statistics{
-    --card-color: #9c27b0;
-}
-.tool-section .card--invisible{
-    opacity: 0;
-    outline: none;
-    animation: none;
-    box-shadow: none;
-}
-/*---------------------CARD--VARIANTS---------------------*/
+/*----------------------PANEL----------------------*/
 
-/*---------------------ANIMATIONS---------------------*/
-@keyframes pass {
-    0%{
-        opacity: 0;
-        max-height: 35%;
-        pointer-events: none;
-        outline-color: transparent;
-    }
 
-    15%{
-        opacity: 0.8;
-        max-height: 65%;
-        pointer-events: none;
-    }
-
-    40%{
-        max-height: 100%;
-        opacity: 1;
-        pointer-events: all;
-        box-shadow: 1rem 1rem 0 #0007;
-        outline-color: black;
-
-    }
-
-    60%{
-        max-height: 100%;
-        opacity: 1;
-        pointer-events: all;
-        box-shadow: 1rem 1rem 0 #0007;
-        outline-color: black;
-
-    }
-
-    85%{
-        opacity: 0.8;
-        max-height: 65%;
-        pointer-events: none;
-    }
-
-    100%{
-        max-height: 45%;
-        opacity: 0;
-        pointer-events: none;
-        outline-color: transparent;
-    }
-
+/*-----------------PANEL VARIANTS-----------------*/
+#panel--algebra{
+    --panel-theme-color:#F4A04D;
 }
-@keyframes blur {
-    0%{
-        backdrop-filter: blur(10px);
+/*-----------------PANEL VARIANTS-----------------*/
+
+
+/*-----------------ANIMATIONS-----------------*/
+@keyframes slide__by-left {
+    from{
+        left: -100%;
     }
-    40%{
-        backdrop-filter: blur(0);
-    }
-    60%{
-        backdrop-filter: blur(0);
-    }
-    100%{
-        backdrop-filter: blur(10px);
-    }
-}
-@keyframes fade {
-    0%{
-        opacity: 0;
-    }
-    25%{
-        opacity: 0;
-        pointer-events: none;
-    }
-    45%{
-        opacity: 1;
-        pointer-events: initial;
-    }
-    55%{
-        opacity: 1;
-        pointer-events: initial;
-    }
-    75%{
-        opacity: 0;
-        pointer-events: none;
-    }
-    100%{
-        opacity: 0;
+    to{
+        left: 0;
     }
 }
 
-/*---------------------ANIMATIONS---------------------*/
+/*-----------------ANIMATIONS-----------------*/

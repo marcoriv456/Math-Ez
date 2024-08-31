@@ -29,51 +29,51 @@
     </header>
 
 
-    <aside class="shortcut-section">
+<!--    <aside class="shortcut-section">-->
 
-<!--        <label class="grabber-label" for="hide-show-button">-->
-<!--            <img src="res/burguer-button-icon.png" alt="">-->
-<!--        </label>-->
-<!--        <input type="checkbox" id="hide-show-button">-->
+<!--&lt;!&ndash;        <label class="grabber-label" for="hide-show-button">&ndash;&gt;-->
+<!--&lt;!&ndash;            <img src="res/burguer-button-icon.png" alt="">&ndash;&gt;-->
+<!--&lt;!&ndash;        </label>&ndash;&gt;-->
+<!--&lt;!&ndash;        <input type="checkbox" id="hide-show-button">&ndash;&gt;-->
 
 
-            <nav>
-                <h3 >Ir a</h3>
-                <div class="shortcut-container">
-                    <a class="shortcut__title" href="#header">Inicio</a>
-                    <ul>
-                        <li>
-                            <a href="#logo-section">Presentacion</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="shortcut-container">
-                    <a class="shortcut__title" href="#introduction-section">Introduccion</a>
-                    <ul>
-                        <li>
-                            <a href="#introduction-section__1">Todo en un solo lugar</a>
-                        </li>
-                        <li>
-                            <a href="#introduction-section__2">Hecho para todos</a>
-                        </li>
-                        <li>
-                            <a href="#introduction-section__3">Sin ningún costo</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="shortcut-container">
-                    <a href="#tool-section" class="shortcut__title">Prueba <span>Math</span>Ez</a>
-                    <ul>
-                        <li><a href="#algebra-tool-reference">Algebra</a></li>
-                        <li><a href="#calculus-tool-reference">Calculo</a></li>
-                        <li><a href="#logic-tool-reference">Logica</a></li>
-                        <li><a href="#graphics-tool-reference">Graficas</a></li>
-                        <li><a href="#measures-tool-reference">Medidas</a></li>
-                        <li><a href="#statics-tool-reference">Estadistica</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </aside>
+<!--            <nav>-->
+<!--                <h3 >Ir a</h3>-->
+<!--                <div class="shortcut-container">-->
+<!--                    <a class="shortcut__title" href="#header">Inicio</a>-->
+<!--                    <ul>-->
+<!--                        <li>-->
+<!--                            <a href="#logo-section">Presentacion</a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--                <div class="shortcut-container">-->
+<!--                    <a class="shortcut__title" href="#introduction-section">Introduccion</a>-->
+<!--                    <ul>-->
+<!--                        <li>-->
+<!--                            <a href="#introduction-section__1">Todo en un solo lugar</a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a href="#introduction-section__2">Hecho para todos</a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a href="#introduction-section__3">Sin ningún costo</a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--                <div class="shortcut-container">-->
+<!--                    <a href="#tool-section" class="shortcut__title">Prueba <span>Math</span>Ez</a>-->
+<!--                    <ul>-->
+<!--                        <li><a href="#algebra-tool-reference">Algebra</a></li>-->
+<!--                        <li><a href="#calculus-tool-reference">Calculo</a></li>-->
+<!--                        <li><a href="#logic-tool-reference">Logica</a></li>-->
+<!--                        <li><a href="#graphics-tool-reference">Graficas</a></li>-->
+<!--                        <li><a href="#measures-tool-reference">Medidas</a></li>-->
+<!--                        <li><a href="#statics-tool-reference">Estadistica</a></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </nav>-->
+<!--        </aside>-->
     <main>
 
         <div class="logo-section" id="logo-section">
@@ -160,143 +160,171 @@
         </div>
 
 
-        <div class="tool-section" id="tool-section">
+        <div id="tool-section">
             <div class="title">
                 <h2>¡Prueba <span>Math</span>Ez ahora!</h2>
             </div>
 
-            <nav class="card-section">
-                <div class="card-container">
-                    
-                </div>
-                    <div class="card card--algebra">
-                        <a href="#">
-                            <img src="res/algebra-icon.png" alt="Algebra">
-                        </a>
+            <div class="panel-section">
+                <div class="panel-container">
 
+                    <div class="panel" id="panel--algebra">
+                        <img src="res/algebra-icon.png" alt="">
                         <h3>Algebra Lineal</h3>
-                        <div class="card__info">
-                            <p>Álgebra lineal estudia vectores, matrices, espacios vectoriales y transformaciones lineales, fundamentales para resolver sistemas y modelar fenómenos.</p>
-                        </div>
-                        <div class="screen-overlay">
-                            <div class="screen__topic">
+                        <p>Álgebra lineal estudia vectores, matrices, espacios vectoriales y transformaciones lineales, fundamentales para resolver sistemas y modelar fenómenos.</p>
+                        <nav class="panel__feature__container">
+                            <a href="#" class="panel__feature">
                                 <img src="res/matrix-icon.png" alt="">
                                 <h4>Calculadora de matrices</h4>
                                 <p>Una calculadora que te permitira realizar una gran variedad de operaciones basicas usando matrices, tales como suma, multiplicacion, determinantes e inversas, entre otras funciones mas.</p>
-                            </div>
-                            <div class="screen__topic">
-                                <img src="res/linear-ecuations-icon.png" alt="">
+                            </a>
+
+                            <a class="panel__feature">
+                                <img src="res/ecuation-system-icon.png" alt="">
                                 <h4>Sistemas de ecuaciones lineales</h4>
                                 <p>Con esta calculadora podrás obtener soluciones para sistemas de ecuaciones lineales, sea cual sea el numero de incógnitas que este tenga.</p>
-                            </div>
+                            </a>
 
-                            <div class="screen__topic screen__topic--in-development">
-                                <img src="res/in-development-icon.png" alt="">
-                                <h4>Sigue en desarrollo</h4>
-                                <p>Con el tiempo se seguirán añadiendo calculadoras a esta sección.</p>
-                            </div>
-
-                            <div class="advice--container">
-                                <p>Da click para ir a la seccion</p>
-                            </div>
-                        </div>
-                        <div class="blur-overlay"></div>
-
+                        </nav>
                     </div>
 
-                    <div class="card card--calculus">
-                        <div id="algebra-tool-reference"></div>
 
-                        <a href="">
-                            <img src="res/calculus-icon.png" alt="calculo">
-                        </a>
-                        <h3>Calculo</h3>
-                        <div class="card__info">
-                            <p>Cálculo analiza cambios y tasas mediante derivadas e integrales, aplicando conceptos a
-                                funciones, curvas y áreas.</p>
-                        </div>
-                        <div class="screen-overlay">
-                            <div class="screen__topic">
-                                <img src="res/derivative-icon.png" alt="">
-                                <h4>Calculadora de derivadas</h4>
-                                <p>Una calculadora que te permitira derivar funciones de todos los ordenes al instante.</p>
-                            </div>
-
-                            <div class="screen__topic">
-                                <img src="res/integral-icon.png" alt="">
-                                <h4>Calculadora de integrales</h4>
-                                <p>Una calculadora para resolver derivada. Tanto definidas como indefinidas, con esta calculadora podras manejarlas con facilidad</p>
-                            </div>
-
-                            <div class="screen__topic screen__topic--in-development">
-                                <img src="res/in-development-icon.png" alt="">
-                                <h4>Sigue en desarrollo</h4>
-                                <p>Con el tiempo se seguirán añadiendo calculadoras a esta sección.</p>
-                            </div>
-                        </div>
-                        <div class="blur-overlay"></div>
-
+                    <div class="panel__in-development-advice">
+                        <img src="res/in-development-icon.png" alt="">
+                        <h4>Sigue en desarrollo</h4>
+                        <p>Con el tiempo se seguirán añadiendo calculadoras a esta sección.</p>
                     </div>
-                    <div class="card card--logic">
-                    <div id="calculus-tool-reference"></div>
-                        <a href="">
-                            <img src="res/logic-icon.png" alt="Logica">
-                        </a>
-                        <h3>Logica</h3>
-                        <div class="card__info">
-                            <p>Lógica estudia razonamientos válidos mediante proposiciones, operadores y pruebas,
-                                fundamentando la inferencia y la estructura de argumentos.</p>
-                        </div>
-                        <div class="screen-overlay"></div>
-                        <div class="blur-overlay"></div>
+                </div>
 
-                    </div>
-                    <div class="card card--graphics">
-                        <div id="logic-tool-reference"></div>
 
-                        <a href="">
-                            <img src="res/grafic-icon.png" alt="Grafica">
-                        </a>
-                        <h3>Graficas</h3>
-                        <div class="card__info">
-                            <p>Funciones en el plano cartesiano relacionan variables mediante gráficos, mostrando cómo un valor de entrada produce un valor de salida.</p>
-                        </div>
-                        <div class="screen-overlay"></div>
-                        <div class="blur-overlay"></div>
+<!--                    <div class="card card&#45;&#45;algebra">-->
+<!--                        <a href="#">-->
+<!--                            <img src="res/algebra-icon.png" alt="Algebra">-->
+<!--                        </a>-->
 
-                    </div>
-                    <div class="card card--measures">
-                        <div id="graphics-tool-reference"></div>
+<!--                        <h3>Algebra Lineal</h3>-->
+<!--                        <div class="card__info">-->
+<!--                            <p>Álgebra lineal estudia vectores, matrices, espacios vectoriales y transformaciones lineales, fundamentales para resolver sistemas y modelar fenómenos.</p>-->
+<!--                        </div>-->
+<!--                        <div class="screen-overlay">-->
+<!--                            <div class="screen__topic">-->
+<!--                                <img src="res/matrix-icon.png" alt="">-->
+<!--                                <h4>Calculadora de matrices</h4>-->
+<!--                                <p>Una calculadora que te permitira realizar una gran variedad de operaciones basicas usando matrices, tales como suma, multiplicacion, determinantes e inversas, entre otras funciones mas.</p>-->
+<!--                            </div>-->
+<!--                            <div class="screen__topic">-->
+<!--                                <img src="res/linear-ecuations-icon.png" alt="">-->
+<!--                                <h4>Sistemas de ecuaciones lineales</h4>-->
+<!--                                <p>Con esta calculadora podrás obtener soluciones para sistemas de ecuaciones lineales, sea cual sea el numero de incógnitas que este tenga.</p>-->
+<!--                            </div>-->
 
-                        <a href="">
-                            <img src="res/measures-icon.png" alt="">
-                        </a>
-                        <h3>Medidas</h3>
-                        <div class="card__info">
-                            <p>Medidas y conversiones estandarizan cantidades mediante unidades y factores de conversión para comparar y calcular en diferentes sistemas.</p>
-                        </div>
-                        <div class="screen-overlay"></div>
-                        <div class="blur-overlay"></div>
+<!--                            <div class="screen__topic screen__topic&#45;&#45;in-development">-->
+<!--                                <img src="res/in-development-icon.png" alt="">-->
+<!--                                <h4>Sigue en desarrollo</h4>-->
+<!--                                <p>Con el tiempo se seguirán añadiendo calculadoras a esta sección.</p>-->
+<!--                            </div>-->
 
-                    </div>
-                    <div class="card card-statistics">
-                        <div id="measures-tool-reference"></div>
+<!--                            <div class="advice&#45;&#45;container">-->
+<!--                                <p>Da click para ir a la seccion</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="blur-overlay"></div>-->
 
-                        <a href="">
-                            <img src="res/statistics-icon.png" alt="">
-                        </a>
-                        <h3>Estadistica</h3>
-                        <div class="card__info">
-                            <p>Estadística analiza y resume datos mediante técnicas de probabilidad, distribuciones y medidas de tendencia central y dispersión.</p>
-                        </div>
-                        <div class="screen-overlay"></div>
-                        <div class="blur-overlay"></div>
-                    </div>
-                    <div class="card card--invisible">
-                        <div id="statics-tool-reference"></div>
+<!--                    </div>-->
 
-                    </div>
-                </nav>
+<!--                    <div class="card card&#45;&#45;calculus">-->
+<!--                        <div id="algebra-tool-reference"></div>-->
+
+<!--                        <a href="">-->
+<!--                            <img src="res/calculus-icon.png" alt="calculo">-->
+<!--                        </a>-->
+<!--                        <h3>Calculo</h3>-->
+<!--                        <div class="card__info">-->
+<!--                            <p>Cálculo analiza cambios y tasas mediante derivadas e integrales, aplicando conceptos a-->
+<!--                                funciones, curvas y áreas.</p>-->
+<!--                        </div>-->
+<!--                        <div class="screen-overlay">-->
+<!--                            <div class="screen__topic">-->
+<!--                                <img src="res/derivative-icon.png" alt="">-->
+<!--                                <h4>Calculadora de derivadas</h4>-->
+<!--                                <p>Una calculadora que te permitira derivar funciones de todos los ordenes al instante.</p>-->
+<!--                            </div>-->
+
+<!--                            <div class="screen__topic">-->
+<!--                                <img src="res/integral-icon.png" alt="">-->
+<!--                                <h4>Calculadora de integrales</h4>-->
+<!--                                <p>Una calculadora para resolver derivada. Tanto definidas como indefinidas, con esta calculadora podras manejarlas con facilidad</p>-->
+<!--                            </div>-->
+
+<!--                            <div class="screen__topic screen__topic&#45;&#45;in-development">-->
+<!--                                <img src="res/in-development-icon.png" alt="">-->
+<!--                                <h4>Sigue en desarrollo</h4>-->
+<!--                                <p>Con el tiempo se seguirán añadiendo calculadoras a esta sección.</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="blur-overlay"></div>-->
+
+<!--                    </div>-->
+<!--                    <div class="card card&#45;&#45;logic">-->
+<!--                    <div id="calculus-tool-reference"></div>-->
+<!--                        <a href="">-->
+<!--                            <img src="res/logic-icon.png" alt="Logica">-->
+<!--                        </a>-->
+<!--                        <h3>Logica</h3>-->
+<!--                        <div class="card__info">-->
+<!--                            <p>Lógica estudia razonamientos válidos mediante proposiciones, operadores y pruebas,-->
+<!--                                fundamentando la inferencia y la estructura de argumentos.</p>-->
+<!--                        </div>-->
+<!--                        <div class="screen-overlay"></div>-->
+<!--                        <div class="blur-overlay"></div>-->
+
+<!--                    </div>-->
+<!--                    <div class="card card&#45;&#45;graphics">-->
+<!--                        <div id="logic-tool-reference"></div>-->
+
+<!--                        <a href="">-->
+<!--                            <img src="res/grafic-icon.png" alt="Grafica">-->
+<!--                        </a>-->
+<!--                        <h3>Graficas</h3>-->
+<!--                        <div class="card__info">-->
+<!--                            <p>Funciones en el plano cartesiano relacionan variables mediante gráficos, mostrando cómo un valor de entrada produce un valor de salida.</p>-->
+<!--                        </div>-->
+<!--                        <div class="screen-overlay"></div>-->
+<!--                        <div class="blur-overlay"></div>-->
+
+<!--                    </div>-->
+<!--                    <div class="card card&#45;&#45;measures">-->
+<!--                        <div id="graphics-tool-reference"></div>-->
+
+<!--                        <a href="">-->
+<!--                            <img src="res/measures-icon.png" alt="">-->
+<!--                        </a>-->
+<!--                        <h3>Medidas</h3>-->
+<!--                        <div class="card__info">-->
+<!--                            <p>Medidas y conversiones estandarizan cantidades mediante unidades y factores de conversión para comparar y calcular en diferentes sistemas.</p>-->
+<!--                        </div>-->
+<!--                        <div class="screen-overlay"></div>-->
+<!--                        <div class="blur-overlay"></div>-->
+
+<!--                    </div>-->
+<!--                    <div class="card card-statistics">-->
+<!--                        <div id="measures-tool-reference"></div>-->
+
+<!--                        <a href="">-->
+<!--                            <img src="res/statistics-icon.png" alt="">-->
+<!--                        </a>-->
+<!--                        <h3>Estadistica</h3>-->
+<!--                        <div class="card__info">-->
+<!--                            <p>Estadística analiza y resume datos mediante técnicas de probabilidad, distribuciones y medidas de tendencia central y dispersión.</p>-->
+<!--                        </div>-->
+<!--                        <div class="screen-overlay"></div>-->
+<!--                        <div class="blur-overlay"></div>-->
+<!--                    </div>-->
+<!--                    <div class="card card&#45;&#45;invisible">-->
+<!--                        <div id="statics-tool-reference"></div>-->
+
+<!--                    </div>-->
+                </div>
         </div>
     </main>
 </body>

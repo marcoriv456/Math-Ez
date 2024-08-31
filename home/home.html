@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MathEz-Calculadora online</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/introduction-section.css">
+    <link rel="stylesheet" href="css/logo-section.css">
+    <link rel="stylesheet" href="css/tool-section.css">
+    <link rel="stylesheet" href="css/shortcut-section.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header id="header">
+        <div class="logo"><img src="res/math-ez-sigma-header.png" alt="">
+            <p><span>Math</span>Ez</p>
+        </div>
+
+
+        <nav>
+            <ul>
+                <li><a href="">Iniciar Sesion</a></li>
+                <li><a href="">Registrarse</a></li>
+                <li><a href="">Soporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <aside class="shortcut-section">
+
+<!--        <label class="grabber-label" for="hide-show-button">-->
+<!--            <img src="res/burguer-button-icon.png" alt="">-->
+<!--        </label>-->
+<!--        <input type="checkbox" id="hide-show-button">-->
+
+
+            <nav>
+                <h3 >Ir a</h3>
+                <div class="shortcut-container">
+                    <a class="shortcut__title" href="#header">Inicio</a>
+                    <ul>
+                        <li>
+                            <a href="#logo-section">Presentacion</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="shortcut-container">
+                    <a class="shortcut__title" href="#introduction-section">Introduccion</a>
+                    <ul>
+                        <li>
+                            <a href="#introduction-section__1">Todo en un solo lugar</a>
+                        </li>
+                        <li>
+                            <a href="#introduction-section__2">Hecho para todos</a>
+                        </li>
+                        <li>
+                            <a href="#introduction-section__3">Sin ningún costo</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="shortcut-container">
+                    <a href="#tool-section" class="shortcut__title">Prueba <span>Math</span>Ez</a>
+                    <ul>
+                        <li><a href="#algebra-tool-reference">Algebra</a></li>
+                        <li><a href="#calculus-tool-reference">Calculo</a></li>
+                        <li><a href="#logic-tool-reference">Logica</a></li>
+                        <li><a href="#graphics-tool-reference">Graficas</a></li>
+                        <li><a href="#measures-tool-reference">Medidas</a></li>
+                        <li><a href="#statics-tool-reference">Estadistica</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+    <main>
+        <div class="gradient-overlay"></div>
+
+        <div class="logo-section" id="logo-section">
+            <div class="logo-container">
+                <div class="logo-eater"></div>
+
+                <img src="res/math-ez-sigma-main.png" alt="">
+                <p><span>Math</span>Ez</p>
+            </div>
+            <div class="phrase-container">
+                <p class="phrase">
+                    “La matemática pura es, a su manera, la poesía de las ideas lógicas.”
+                </p>
+                <p class="phrase phrase__autor">
+                    - Albert Einstein
+                </p>
+            </div>
+        </div>
+
+        <div class="introduction-section" id="introduction-section">
+            <div class="title">
+                <h1>
+                    ¡Comprende y resuelve los problemas matemáticos en los que siempre tuviste dudas!
+                </h1>
+            </div>
+
+            <div class="card-section" id="introduction-section__1">
+                <div class="card">
+                    <div class="card__text">
+                        <h2>
+                            Todo en un solo lugar
+                        </h2>
+                        <p>
+                            Calculadoras para cualquier tema. Desde algebra, calculo y trigonometría hasta lógica, grafos y estadística ¡Todo en un solo lugar!
+                        </p>
+<!--                        <div class="animation-layer card__animated__item"></div>-->
+                    </div>
+                    <div class="card__ilustration card__animated__item">
+                        <img class="main main--green"  src="res/calculator-icon.png">
+                        <img class="secondary secondary--first" src="res/algebra-icon.png" alt="" >
+                        <img class="secondary secondary--second" src="res/node-icon.png" alt="" >
+                        <img class="secondary secondary--third" src="res/statistics-icon.png" alt="" >
+                    </div>
+                </div>
+            </div>
+            <div class="card-section" id="introduction-section__2">
+                <div class="card">
+                    <div class="card__text">
+                        <h2>
+                            Hecho para todos.
+                        </h2>
+                        <p>
+                            Tanto como si eres un alumno, docente o incluso ya estas inmerso en una carrera profesional ¡MathEz será tu mejor herramienta
+                        </p>
+                    </div>
+                    <div class="card__ilustration card__animated__item">
+                        <img class="main main--blue"  src="res/student-icon.png">
+                        <img class="secondary secondary--first" src="res/professor-icon.png" alt="" >
+                        <img class="secondary secondary--second" src="res/worker-icon.png" alt="" >
+                        <img class="secondary secondary--third" src="res/tool-icon.png" alt="" >
+                    </div>
+                </div>
+            </div>
+            <div class="card-section" id="introduction-section__3">
+                <div class="card">
+                    <div class="card__text">
+                        <h2>
+                            Sin ningún costo
+                        </h2>
+                        <p>
+                            No te preocupes por el costo, gracias a los anuncios es que MathEz puede ayudarte sin necesidad de cobrarte en lo absoluto. Aunque de igual forma siempre se agradece el desactivar cualquier bloqueador de anuncios para ayudar a mantener el sitio. ¡Gracias!
+                        </p>
+<!--                        <div class="animation-layer card__animated__item"></div>-->
+                    </div>
+                    <div class="card__ilustration card__animated__item">
+                        <img class="main main--red"  src="res/free-icon.png">
+                        <img class="secondary secondary--first" src="res/flying-money-icon.png" alt="" >
+                        <img class="secondary secondary--second" src="res/ad-icon.png" alt="" >
+                        <img class="secondary secondary--third" src="res/turn-off-adblock-icon.png" alt="" >
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="tool-section" id="tool-section">
+            <div class="title">
+                <h2>¡Prueba <span>Math</span>Ez ahora!</h2>
+            </div>
+
+            <nav class="card-section">
+        <!--                    <div id="algebra-tool-reference"></div>-->
+                    <div class="card card--algebra">
+
+                        <a href="#">
+                            <img src="res/algebra-icon.png" alt="Algebra">
+                        </a>
+
+                        <h3>Algebra Lineal</h3>
+                        <div class="card__info">
+                            <p>Álgebra lineal estudia vectores, matrices, espacios vectoriales y transformaciones lineales, fundamentales para resolver sistemas y modelar fenómenos.</p>
+                        </div>
+                        <div class="screen-overlay">
+                            <div class="screen__topic">
+                                <img src="res/matrix-icon.png" alt="">
+                                <h4>Calculadora de matrices</h4>
+                                <p>Una calculadora que te permitira realizar una gran variedad de operaciones basicas usando matrices, tales como suma, multiplicacion, determinantes e inversas, entre otras funciones mas.</p>
+                            </div>
+                            <div class="screen__topic">
+                                <img src="res/linear-ecuations-icon.png" alt="">
+                                <h4>Sistemas de ecuaciones lineales</h4>
+                                <p>Con esta calculadora podrás obtener soluciones para sistemas de ecuaciones lineales, sea cual sea el numero de incógnitas que este tenga.</p>
+                            </div>
+
+                            <div class="screen__topic screen__topic--in-development">
+                                <img src="res/in-development-icon.png" alt="">
+                                <h4>Sigue en desarrollo</h4>
+                                <p>Con el tiempo se seguirán añadiendo calculadoras a esta sección.</p>
+                            </div>
+
+                            <div class="advice--container">
+                                <p>Da click para ir a la seccion</p>
+                            </div>
+                        </div>
+                        <div class="blur-overlay"></div>
+
+                    </div>
+
+                    <div class="card card--calculus">
+                        <div id="algebra-tool-reference"></div>
+
+                        <a href="">
+                            <img src="res/calculus-icon.png" alt="calculo">
+                        </a>
+                        <h3>Calculo</h3>
+                        <div class="card__info">
+                            <p>Cálculo analiza cambios y tasas mediante derivadas e integrales, aplicando conceptos a
+                                funciones, curvas y áreas.</p>
+                        </div>
+                        <div class="screen-overlay">
+                            <div class="screen__topic">
+                                <img src="res/derivative-icon.png" alt="">
+                                <h4>Calculadora de derivadas</h4>
+                                <p>Una calculadora que te permitira derivar funciones de todos los ordenes al instante.</p>
+                            </div>
+
+                            <div class="screen__topic">
+                                <img src="res/integral-icon.png" alt="">
+                                <h4>Calculadora de integrales</h4>
+                                <p>Una calculadora para resolver derivada. Tanto definidas como indefinidas, con esta calculadora podras manejarlas con facilidad</p>
+                            </div>
+
+                            <div class="screen__topic screen__topic--in-development">
+                                <img src="res/in-development-icon.png" alt="">
+                                <h4>Sigue en desarrollo</h4>
+                                <p>Con el tiempo se seguirán añadiendo calculadoras a esta sección.</p>
+                            </div>
+                        </div>
+                        <div class="blur-overlay"></div>
+
+                    </div>
+                    <div class="card card--logic">
+                    <div id="calculus-tool-reference"></div>
+                        <a href="">
+                            <img src="res/logic-icon.png" alt="Logica">
+                        </a>
+                        <h3>Logica</h3>
+                        <div class="card__info">
+                            <p>Lógica estudia razonamientos válidos mediante proposiciones, operadores y pruebas,
+                                fundamentando la inferencia y la estructura de argumentos.</p>
+                        </div>
+                        <div class="screen-overlay"></div>
+                        <div class="blur-overlay"></div>
+
+                    </div>
+                    <div class="card card--graphics">
+                        <div id="logic-tool-reference"></div>
+
+                        <a href="">
+                            <img src="res/grafic-icon.png" alt="Grafica">
+                        </a>
+                        <h3>Graficas</h3>
+                        <div class="card__info">
+                            <p>Funciones en el plano cartesiano relacionan variables mediante gráficos, mostrando cómo un valor de entrada produce un valor de salida.</p>
+                        </div>
+                        <div class="screen-overlay"></div>
+                        <div class="blur-overlay"></div>
+
+                    </div>
+                    <div class="card card--measures">
+                        <div id="graphics-tool-reference"></div>
+
+                        <a href="">
+                            <img src="res/measures-icon.png" alt="">
+                        </a>
+                        <h3>Medidas</h3>
+                        <div class="card__info">
+                            <p>Medidas y conversiones estandarizan cantidades mediante unidades y factores de conversión para comparar y calcular en diferentes sistemas.</p>
+                        </div>
+                        <div class="screen-overlay"></div>
+                        <div class="blur-overlay"></div>
+
+                    </div>
+                    <div class="card card-statistics">
+                        <div id="measures-tool-reference"></div>
+
+                        <a href="">
+                            <img src="res/statistics-icon.png" alt="">
+                        </a>
+                        <h3>Estadistica</h3>
+                        <div class="card__info">
+                            <p>Estadística analiza y resume datos mediante técnicas de probabilidad, distribuciones y medidas de tendencia central y dispersión.</p>
+                        </div>
+                        <div class="screen-overlay"></div>
+                        <div class="blur-overlay"></div>
+                    </div>
+                    <div class="card card--invisible">
+                        <div id="statics-tool-reference"></div>
+
+                    </div>
+                </nav>
+        </div>
+    </main>
+    
+<!--<div style="height: 100vh;"></div>-->
+</body>
+</html>

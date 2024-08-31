@@ -1,0 +1,115 @@
+.tool-section{
+    /*background-image: linear-gradient(to bottom, transparent, #f007);*/
+    background-image: linear-gradient( white    30%, transparent);
+
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400vh;
+    view-timeline: --tool-section;
+    position: sticky;
+    top: 0;
+
+    animation-name: change-background;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+
+    animation-timeline:view();
+    animation-range:contain 0% contain 100% ;
+
+
+}
+
+.tool-section .title{
+    font-size: 2rem;
+    background-color: #80FF55;
+}
+.tool-section .title span{
+    font-family: "Times New Roman", sans-serif;
+    font-weight: 100;
+}
+
+.tool-section .card-container{
+    max-width: 85rem;
+    outline: 3px solid blue;
+    position: sticky;
+    top: calc((100vh - 45rem)/2);
+}
+.tool-section .card-section{
+    outline: 1px solid green;
+    height:45rem;
+    --cards:5;
+    --cards-size:25rem;
+
+    --gaps:calc(var(--cards) - 1);
+    --gap-size:5rem;
+
+
+    display: flex;
+    overflow-x: hidden;
+    gap: var(--gap-size);
+    animation-name:translate;
+    animation-fill-mode: both;
+
+    animation-timing-function: linear;
+    animation-timeline:--tool-section;
+    animation-range:contain 0%  contain 100%;
+    width: fit-content;}
+.tool-section .card{
+    outline: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:var(--cards-size);
+    height: 100%;
+}
+.tool-section .card img{
+    object-fit: contain;
+    height: 30rem;
+}
+.tool-section h3{
+    font-size: 3rem;
+    text-align: center;
+}
+@keyframes translate {
+    0%{
+        transform: translateX( calc( var(--cards-size) + var(--gap-size)  )  );
+    }
+    15%{
+        transform: translateX( calc( var(--cards-size) + var(--gap-size)  )  );
+        /*background-color: red;*/
+    }
+    /*20%{*/
+    /*    transform: translateX( calc(   (var(--cards-size) +  var(--gap-size))  *-1   )   );*/
+    /*}*/
+    /*30%{*/
+    /*    transform: translateX( calc( (var(--cards-size) +  var(--gap-size))*-2   )   );*/
+    /*}*/
+    85%{
+        transform: translateX(calc(-100% + var(--cards-size) *2 + var(--gap-size)   ));
+    }
+
+    100%{
+        /*background-color: transparent;*/
+        /*transform:translateX(-100%);*/
+        transform: translateX(calc(-100% + var(--cards-size) *2 + var(--gap-size)   ));
+    }
+}
+/*@keyframes change-background {*/
+/*    0%{*/
+/*    background-color: #80FF55;*/
+/*    }*/
+/*    5%{*/
+/*        background-color: #FF6363;*/
+/*    }*/
+/*    50%{*/
+/*        background-color: #DC41FF;*/
+/*    }*/
+/*    80%{*/
+/*        background-color: #F1C40F;*/
+/*    }*/
+/*    100%{*/
+/*        background-color: transparent;*/
+/*    }*/
+/*}*/

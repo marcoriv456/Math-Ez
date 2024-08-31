@@ -1,0 +1,138 @@
+.logo-section{
+    height: 400vh;
+    display: flex;
+    flex-direction: column;
+    --logo-top:calc((100vh - 17rem) / 2);
+    view-timeline: --logo-section block;
+
+}
+
+.logo-container{
+    margin-top:var(--logo-top);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: sticky;
+    top: var(--logo-top) ;
+
+
+    animation: disappear-logo-at-end ease both;
+    animation-timeline:--logo-section;
+}
+
+
+
+.logo-container img{
+    width: 11rem;
+    height: 11rem;
+
+    object-fit: contain;
+    object-position: center;
+
+    animation: eat-logo ease both;
+    animation-range: cover 40% cover 100%;
+    animation-timeline:--logo-section;
+
+}
+.logo-container p{
+    font-size: 10rem;
+}
+
+.logo-container span{
+    font-family: "Times New Roman", sans-serif;
+}
+
+
+.logo-eater{
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: white;
+
+    animation: disappear-logo ease both;
+    animation-range: cover 40% cover 100%;
+    animation-timeline:--logo-section;
+}
+
+.phrase-container{
+    position: sticky;
+    top:calc(100% - 5rem);
+    bottom: 0;
+    font-size: 2rem;
+
+    animation: appear-phrase ease both;
+    animation-range: cover 20% cover 70%;
+    animation-timeline:--logo-section;
+}
+.phrase{
+    font-family: "Times New Roman", sans-serif;
+}
+.phrase__autor{
+    text-align: end;
+}
+
+@keyframes eat-logo {
+    23%{
+        transform:translateX(40rem) ;
+    }
+    40%{
+        transform:translateX(18rem);
+    }
+    70%{
+        transform:translateX(18rem) translateY(0);
+        opacity: 1;
+    }
+    80%{
+        transform:translateX(18rem) translateY(-100vh);
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(18rem) translateY(-100vh);
+        opacity: 0;
+    }
+
+}
+@keyframes disappear-logo{
+    18%{
+        width: 45rem;
+    }
+    23%{
+        width: 50rem;
+    }
+    100%{
+        width: 50rem;
+    }
+}
+@keyframes appear-phrase {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes disappear-logo-at-end {
+    0%{
+        opacity: 1;
+    }
+    85%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+

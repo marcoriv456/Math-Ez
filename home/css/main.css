@@ -1,0 +1,85 @@
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*margin: auto;*/
+
+    view-timeline:--main;
+    /*max-width: 100%;*/
+
+}
+
+
+
+.title{
+    width: 100vw;
+    text-align: center;
+    padding: 4rem;
+    box-shadow: 5px 5px 5px rgba(0,0,0, 0.25);
+
+    position: sticky;
+    top: 0;
+    animation: fade-in-fade-out ease both;
+    animation-range: cover 0% contain 100%;
+    animation-timeline:view();
+    z-index: 1;
+}
+.gradient-overlay{
+    top: 0;
+    z-index: -10;
+    position: fixed;
+    background-color: #8DB5FF;
+    background-image: linear-gradient(transparent, white);
+    width: 100vw;
+    height: 100vh;
+    animation: change-background-color ease both;
+    /*animation-timeline:view();*/
+    animation-range: cover 10% cover 100%;
+    /*outline: 4px solid black;*/
+    animation-timeline:--main;
+
+}
+@keyframes change-background-color{
+    0%{
+        background-color: white;
+    }
+    25%{
+        background-color: white;
+    }
+    30%{
+        background-color: #8DB5FF;
+    }
+    60%{
+        background-color: #8DB5FF;
+    }
+    65%{
+        background-color: #6babff;
+    }
+    95%{
+        background-color: #6babff;
+
+    }
+    100%{
+        background-color: white;
+    }
+
+}
+
+
+@keyframes fade-in-fade-out {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+

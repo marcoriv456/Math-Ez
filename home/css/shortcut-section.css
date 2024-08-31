@@ -1,0 +1,144 @@
+.shortcut-section{
+    width: 100vw;
+    height:100vh;
+    /*padding-right: 3rem;*/
+
+    position: fixed;
+    /*left: -27rem;*/
+    top: 0;
+    left: 0;
+    /*bottom: 0;*/
+    /*z-index: 5;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+
+    /*outline: 1px solid black;*/
+    /*opacity: 0;*/
+    /*box-shadow: 0.5rem 0.5rem 0.5rem #777777f7;*/
+
+    background-color: #0004;
+    z-index: 5;
+    /*backdrop-filter: sepia(1) hue-rotate(140deg) brightness(0.8) saturate(1);*/
+    /*backdrop-filter: grayscale(1);*/
+    /*backdrop-filter: blur(5px);*/
+
+    /*backdrop-filter: blur(10px);*/
+
+
+    transition: left 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+
+}
+/*.shortcut-section:hover{*/
+/*    !*opacity: 1;*!*/
+/*    !*left: 0;*!*/
+/*}*/
+/*.shortcut-section:has(#hide-show-button:checked){*/
+/*    left: 0;*/
+/*}*/
+/*#hide-show-button{*/
+/*    display: none;*/
+/*}*/
+
+
+.shortcut-section h3{
+    color: black;
+    opacity: 1;
+    font-size: 3rem;
+    /*font-weight: 400;*/
+}
+.shortcut-section nav{
+    /*margin: auto;*/
+    position: relative;
+    padding: 2rem;
+    height:100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    left: -20rem;
+    width: 25rem;
+    /*box-shadow: 1rem 1rem 0 #8DB5FF;*/
+    transition: left .5s ease;
+}
+.shortcut-section:has(nav:hover){
+    opacity: 1;
+}
+.shortcut-section nav:hover{
+    left: 0;
+}
+.shortcut-section .shortcut-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    /*box-shadow: 0 0.5rem 0 #000a;*/
+}
+.shortcut-section .shortcut-container .shortcut__title{
+    font-size: 2.5rem;
+    /*font-weight: 300;*/
+    margin: 0;
+    color: #6655FF;
+}
+
+.shortcut-section .shortcut-container a{
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    text-decoration: none;
+    color: black;
+}
+.shortcut-section .shortcut-container a:hover{
+    text-decoration: underline;
+}
+.shortcut-section .shortcut-container a span{
+    font-family: "Times New Roman", sans-serif;
+}
+
+
+/*------------------GRABBER------------------*/
+.shortcut-section .grabber-label{
+    width: 5rem;
+    height:5rem;
+    padding: 1rem;
+
+    position: absolute;
+    /*top: calc((100vh - 15rem)/2);*/
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    cursor: pointer;
+}
+.shortcut-section .grabber{
+    width: 0.5rem;
+    height: 10rem;
+
+
+    background-color: #999;
+    border-radius: 1rem;
+}
+.shortcut-section .grabber-label img{
+    width: 100%;
+    height: 100%;
+}
+.shortcut-section .grabber-label:hover{
+    filter: brightness(0.8);
+}
+/*------------------GRABBER------------------*/
+
+@keyframes shortcut-section {
+    from{
+        background-color: transparent;
+    }
+    to{
+        background-color: #0004;
+    }
+}
+
+

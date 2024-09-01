@@ -1,0 +1,145 @@
+#register-section{
+    height: 200vh;
+}
+#register-section .register__container{
+    height: 100vh;
+    width: 100vw;
+    max-width: 1080px;
+
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    outline: 2px solid black;
+}
+
+/*---------------ILUSTRATION---------------*/
+#register-section figure{
+    flex-grow: 1;
+    flex-basis: 0;
+    min-height: 720px;
+    max-height: 720px;
+    position: relative;
+}
+#register-section figure img{
+    --shadow-color: none;
+    --size: none;
+    --shadow-proportion: calc(var(--size) * 0.05);
+
+    width: var(--size);
+    height: var(--size);
+
+    position: absolute;
+    object-fit: contain;
+
+    filter: drop-shadow( var(--shadow-proportion) var(--shadow-proportion) 0 var(--shadow-color));
+}
+
+
+#register-section figure img:nth-child(1){
+    --size: 12rem;
+
+    right: 1rem;
+    top: 2.5rem;
+}
+
+#register-section figure img:nth-child(2){
+    --size: 8rem;
+
+    top: 8rem;
+    left: 9rem;
+}
+
+#register-section figure img:nth-child(3){
+    --size: 21rem;
+
+    top: 17rem;
+    right: 4rem;
+}
+#register-section figure img:nth-child(4){
+    --size: 13rem;
+
+    bottom: 15rem;
+    left: 4rem;
+}
+#register-section figure img:nth-child(5){
+    --size: 12rem;
+
+    bottom: 9rem;
+    right: 9rem;
+}
+
+
+#register-section figure .algebra{
+    --shadow-color:#F4A04D;
+}
+
+#register-section figure .calculus{
+    --shadow-color:#f44d4d;
+}
+
+#register-section figure .logic{
+    --shadow-color:#4df450;
+}
+#register-section figure .graphics{
+    --shadow-color:#4ddbf4;
+}
+
+#register-section figure .statistics{
+    --shadow-color: #8a4df4;
+}
+/*---------------ILUSTRATION---------------*/
+
+
+#register-section .register{
+    flex-grow: 1;
+    flex-basis: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+#register-section .register h2,
+#register-section .register p{
+    text-align: center;
+}
+
+#register-section .register h2{
+    font-size: 3rem;
+}
+#register-section .register p{
+    font-size: 2rem;
+}
+
+#register-section .register form{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+#register-section .register form label{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+#register-section .register form label input{
+    height: 2.5rem;
+
+    border-radius: 5px;
+    border: 1px solid #757575;
+    box-shadow: 0.5rem 0.5rem 0 #8DB5FF;
+}
+
+#register-section .register form input[type=submit]{
+    padding: 1rem 4rem;
+    font-size: inherit;
+    align-self: start;
+    background-color: #8DB5FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+}
+
+

@@ -16,7 +16,6 @@ main{
     text-align: center;
     padding: 4rem;
     box-shadow: 5px 5px 5px rgba(0,0,0, 0.25);
-
     position: sticky;
     top: 0;
     animation: fade-in-fade-out ease both;

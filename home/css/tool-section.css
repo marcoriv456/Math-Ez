@@ -1,6 +1,4 @@
 #tool-section{
-    height: 400vh;
-
     position: sticky;
     top: 0;
 
@@ -198,6 +196,9 @@
 }
 #panel--calculus{
     --panel-theme-color: #f44d4d;
+}
+#panel--logic{
+    --panel-theme-color: #4df450;
 }
 /*-----------------PANEL VARIANTS-----------------*/
 

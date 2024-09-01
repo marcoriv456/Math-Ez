@@ -14,7 +14,7 @@
 #tool-section .title{
     max-height: 10rem;
 
-    font-size: 2rem;
+    font-size: 2.5rem;
     background-color: #6babff;
 }
 
@@ -195,6 +195,9 @@
 /*-----------------PANEL VARIANTS-----------------*/
 #panel--algebra{
     --panel-theme-color:#F4A04D;
+}
+#panel--calculus{
+    --panel-theme-color: #f44d4d;
 }
 /*-----------------PANEL VARIANTS-----------------*/
 

@@ -1,4 +1,9 @@
 
+<<<<<<< Updated upstream
 .idea/vcs.xml
 .idea/modules.xml
 .idea/Math-Ez.iml
+=======
+.idea/Math-Ez.iml
+/.idea
+>>>>>>> Stashed changes

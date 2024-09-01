@@ -157,40 +157,44 @@
         </section>
 
 
-        <div id="tool-section">
-            <div class="title">
-                <h2>¡Prueba <span>Math</span>Ez ahora!</h2>
-            </div>
+        <section id="tool-section">
+            <h2 class="title">¡Prueba <span>Math</span>Ez ahora!</h2>
 
             <div class="panel-section">
                 <div class="panel-container panel__animated-item">
 
-                    <div class="panel" id="panel--algebra">
+                    <section class="panel" id="panel--algebra">
                         <img  class="panel__animated-item" src="res/algebra-icon.png" alt="">
                         <h3>Algebra Lineal</h3>
                         <p>Álgebra lineal estudia vectores, matrices, espacios vectoriales y transformaciones lineales, fundamentales para resolver sistemas y modelar fenómenos.</p>
-                        <nav class="panel__feature__container">
-                            <a href="#" class="panel__feature panel__animated-item">
-                                <img src="res/matrix-icon.png" alt="">
-                                <h4>Calculadora de matrices</h4>
-                                <p>Una calculadora que te permitira realizar una gran variedad de operaciones basicas usando matrices, tales como suma, multiplicacion, determinantes e inversas, entre otras funciones mas.</p>
-                            </a>
+                        <nav>
+                            <ul class="panel__feature__list">
+                                <li class="panel__animated-item">
+                                    <a href="#" class="panel__feature">
+                                        <img src="res/matrix-icon.png" alt="">
+                                        <h4>Calculadora de matrices</h4>
+                                        <p>Una calculadora que te permitira realizar una gran variedad de operaciones basicas usando matrices, tales como suma, multiplicacion, determinantes e inversas, entre otras funciones mas.</p>
+                                    </a>
+                                </li>
+                                <li class="panel__animated-item">
+                                    <a class="panel__feature panel__animated-item">
+                                        <img src="res/ecuation-system-icon.png" alt="">
+                                        <h4>Calculadora de sistemas de ecuaciones lineales</h4>
+                                        <p>Con esta calculadora podrás obtener soluciones para sistemas de ecuaciones lineales, sea cual sea el numero de incógnitas que este tenga.</p>
+                                    </a>
+                                </li>
+                            </ul>
 
-                            <a class="panel__feature panel__animated-item">
-                                <img src="res/ecuation-system-icon.png" alt="">
-                                <h4>Calculadora de sistemas de ecuaciones lineales</h4>
-                                <p>Con esta calculadora podrás obtener soluciones para sistemas de ecuaciones lineales, sea cual sea el numero de incógnitas que este tenga.</p>
-                            </a>
                         </nav>
-                    </div>
+                    </section>
 
 
-                    <div class="panel__in-development-advice panel__animated-item">
+                    <dialog class="panel__in-development-advice panel__animated-item">
                         <img src="res/in-development-icon.png" alt="">
                         <h4>Sigue en desarrollo</h4>
                         <p>Con el tiempo se seguirán añadiendo calculadoras a esta sección.</p>
-                    </div>
-                </div>
+                    </dialog>
+                </div>  
 
 
 <!--                    <div class="card card&#45;&#45;algebra">-->
@@ -321,7 +325,7 @@
 
 <!--                    </div>-->
                 </div>
-        </div>
+        </section>
     </main>
 </body>
 </html>

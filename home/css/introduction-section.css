@@ -1,4 +1,4 @@
-.introduction-section{
+#introduction-section{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,19 +6,19 @@
     max-width: 1080px;
 
 }
-.introduction-section .title{
+#introduction-section .title{
     font-size: 2rem;
     background-color: #8DB5FF;
 }
 
 
 /*-----------------CARD SECTION----------------------*/
-.introduction-section .panel__container{
+#introduction-section .panel__container{
     height: 150vh;
     view-timeline:--card-section;
 }
 
-.introduction-section .panel{
+#introduction-section .panel{
     display: flex;
     height: 50rem;
     position: sticky;
@@ -26,7 +26,7 @@
 
 }
 
-.introduction-section .panel__text{
+#introduction-section .panel__text{
     position:relative;
     flex-grow: 1;
     flex-basis: 0;
@@ -38,7 +38,7 @@
     font-size: 2rem;
     text-align: center;
 }
-.introduction-section .panel .panel__animated__item{
+#introduction-section .panel .panel__animated__item{
     animation-timing-function: ease;
     animation-fill-mode: both;
     animation-range:cover 10% cover 100%;
@@ -46,7 +46,7 @@
 
 }
 
-/*.introduction-section .card__text .animation-layer{*/
+/*#introduction-section .card__text .animation-layer{*/
 /*    background-color: white;*/
 /*    position: absolute;*/
 
@@ -54,7 +54,7 @@
 /*    bottom:-2rem;*/
 /*    animation-name: grow-layer;*/
 /*}*/
-.introduction-section .panel__ilustration{
+#introduction-section .panel__ilustration{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +63,7 @@
     flex-basis: 0;
     animation-name: enter-by-left;
 }
-.introduction-section .panel__ilustration .main{
+#introduction-section .panel__ilustration .main{
     object-fit: contain;
     object-position: center;
     height: 50%;
@@ -71,7 +71,7 @@
     animation-timeline:view();
     animation-range:contain 0% cover 35%;
 }
-.introduction-section .panel__ilustration .secondary{
+#introduction-section .panel__ilustration .secondary{
     object-fit: contain;
     object-position: center;
     position: absolute;
@@ -82,17 +82,17 @@
     animation-iteration-count: infinite;
     animation-fill-mode: both;
 }
-.introduction-section .panel__ilustration .secondary--first{
+#introduction-section .panel__ilustration .secondary--first{
     animation-delay: 1s;
     right: 3rem;
     top:7rem;
 }
-.introduction-section .panel__ilustration .secondary--second{
+#introduction-section .panel__ilustration .secondary--second{
     animation-delay: 0.7s;
     left: 3rem;
     top: 50%;
 }
-.introduction-section .panel__ilustration .secondary--third{
+#introduction-section .panel__ilustration .secondary--third{
     animation-delay: 0.5s;
     right: 3rem;
     bottom: 2rem;

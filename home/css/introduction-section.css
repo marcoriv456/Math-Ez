@@ -137,22 +137,6 @@
         transform: translateX(50vw);
     }
 }
-/*@keyframes grow-layer {*/
-/*    0%{*/
-/*        height: calc(100% + 2rem);*/
-/*    }*/
-/*    50%{*/
-/*        height: 0;*/
-/*        top: auto;*/
-/*    }*/
-/*    75%{*/
-/*       top: 0;*/
-/*    }*/
-/*    100%{*/
-/*        height: calc(100% + 2rem);*/
-/*    }*/
-/*}*/
-
 
 .main--green{
     --shadow-color:#80FF55;

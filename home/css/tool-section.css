@@ -14,7 +14,7 @@
 #tool-section .title{
     padding: 2rem;
 
-    z-index: 0;
+    z-index: 2;
 
     background-color: #6babff;
 
@@ -33,6 +33,13 @@
 #tool-section .panel-container{
     max-width: 1080px;
     height: 250vh;
+
+    background-color: #FF6363aa;
+    view-timeline:--panel-container;
+
+    animation-name: slide__to-left;
+    animation-range:cover 60% cover 100%;
+    animation-timeline:view();
 }
 /*-----------------PANEL CONTAINER-----------------*/
 
@@ -53,7 +60,17 @@
 
     gap: 2rem;
 
+
 }
+#tool-section .panel .panel__animated-item{
+    --animation-delay:0%;
+
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    animation-timeline:--panel-container;
+    animation-range:cover calc(0% + var(--animation-delay)) cover calc(35% + var(--animation-delay));
+}
+
 #tool-section .panel > img{
     width: 100%;
 
@@ -61,6 +78,8 @@
     object-fit: contain;
 
     filter: drop-shadow(1rem 1rem 0 var(--panel-theme-color));
+
+    animation-name: slide__from-left;
 }
 
 #tool-section .panel h3,
@@ -83,8 +102,11 @@
 
 }
 
+
+
 #tool-section .panel__feature{
     width: 100%;
+
     display: grid;
     grid-template: auto auto/1fr 2fr;
 
@@ -92,6 +114,19 @@
     color: black;
 
     transition: transform .5s ease;
+
+    animation-name: slide__from-bottom;
+
+}
+
+#tool-section .panel__feature:nth-child(2){
+    --animation-delay: 5%;
+}
+#tool-section .panel__feature:nth-child(3){
+    --animation-delay: 10%;
+}
+#tool-section .panel__feature:nth-child(4){
+    --animation-delay: 15%;
 }
 
 #tool-section .panel__feature:hover{
@@ -100,10 +135,10 @@
 
 #tool-section .panel__feature img{
     width: 100%;
+    padding: 1rem;
 
     grid-row: span 2;
     place-self: center;
-
     object-fit: contain;
 
     filter: drop-shadow(0.5rem 0.5rem 0 var(--panel-theme-color));
@@ -120,14 +155,14 @@
 #tool-section .panel__feature p{
     font-size: 1.2rem;
 }
+
 /*------------PANEL FEATURES------------*/
-
-
-
+/*------------PANEL IN DEVELOPMENT ADVICE------------*/
 #tool-section .panel-container .panel__in-development-advice{
     width: 30rem;
-    border-radius: 20px;
+
     padding: 2rem;
+    border-radius: 20px;
 
 
     position: sticky;
@@ -137,8 +172,11 @@
     grid-template: auto auto/1fr 2fr;
 
     background-color: #FFE436;
-}
 
+    animation-name: slide__from-left;
+    animation-timeline:view();
+    animation-range:cover 0% cover 25%;
+}
 
 #tool-section .panel-container .panel__in-development-advice img{
     width: 100%;
@@ -155,8 +193,7 @@
 #tool-section .panel-container .panel__in-development-advice p{
     font-size: 1.5rem;
 }
-
-
+/*------------PANEL IN DEVELOPMENT ADVICE------------*/
 /*----------------------PANEL----------------------*/
 
 
@@ -168,13 +205,32 @@
 
 
 /*-----------------ANIMATIONS-----------------*/
-@keyframes slide__by-left {
+@keyframes slide__from-left {
     from{
-        left: -100%;
+        translate: -50vw;
     }
     to{
-        left: 0;
+        translate: 0;
     }
 }
+
+@keyframes slide__to-left {
+    from{
+        translate: 0;
+    }
+    to{
+        translate: -100vw;
+    }
+}
+
+@keyframes slide__from-bottom {
+    from {
+        translate: 0 100vh;
+    }
+    to{
+        translate: 0;
+    }
+}
+
 
 /*-----------------ANIMATIONS-----------------*/

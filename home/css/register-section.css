@@ -1,5 +1,12 @@
 #register-section{
-    height: 200vh;
+    height: 400vh;
+}
+#register-section .register__animated-item{
+    --animation-delay: 0%;
+
+    animation: ease both;
+    animation-timeline:view();
+    animation-range:cover calc(0% + var(--animation-delay)) contain calc(35% + var(--animation-delay));
 }
 #register-section .register__container{
     height: 100vh;
@@ -11,9 +18,11 @@
 
     display: flex;
     align-items: center;
-    animation: slide__from-bottom ease both;
-    animation-timeline:view();
-    animation-range:cover 0% contain 30%;
+
+
+    animation-name: slide__to-left;
+    animation-range:cover 70% cover 100%;
+
 }
 
 /*---------------ILUSTRATION---------------*/
@@ -23,6 +32,8 @@
     min-height: 720px;
     max-height: 720px;
     position: relative;
+
+    animation-name: slide__from-bottom;
 }
 #register-section figure img{
     --shadow-color: none;
@@ -107,6 +118,9 @@
 
     display: flex;
     flex-direction: column;
+
+    --animation-delay: 5%;
+    animation-name: slide__from-bottom;
 }
 #register-section .register h2,
 #register-section .register p{
@@ -150,4 +164,11 @@
     border-radius: 5px;
 }
 
-
+@keyframes c {
+    from{
+        background-color: blue;
+    }
+    to{
+        background-color: red;
+    }
+}

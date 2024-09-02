@@ -1,25 +1,25 @@
 header{
-    background-color: #c9dcff;
-    display: flex;
-    justify-content: space-between;
-    padding: 4rem;
-    align-items: center;
-    position: relative;
     height: 10rem;
+    padding: 4rem;
 
+    position: relative;
     z-index: 10;
 
-    view-timeline:--header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #c9dcff;
+
 }
 header nav{
+    max-width: 37rem;
     flex-grow: 1.5;
-    max-width: 37.5rem;
 }
 header nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*max-width: 450px;*/
 }
 header nav ul li{
     list-style: none;

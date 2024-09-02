@@ -11,6 +11,9 @@
 
     display: flex;
     align-items: center;
+    animation: slide__from-bottom ease both;
+    animation-timeline:view();
+    animation-range:cover 0% contain 30%;
 }
 
 /*---------------ILUSTRATION---------------*/

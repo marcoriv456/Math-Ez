@@ -5,8 +5,6 @@
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
-    max-width: 1080px;
-
 }
 #introduction-section .title{
     font-size: 2rem;
@@ -16,16 +14,15 @@
 
 /*-----------------CARD SECTION----------------------*/
 #introduction-section .panel__container{
-     /*height: 150vh;*/
-    /* view-timeline:--card-section; */
+     height: 150vh;
     max-width: 1080px;
 }
 
 #introduction-section .panel{
     display: flex;
     height: 50rem;
-    /*position: sticky;*/
-    /*top: calc((100vh - 50rem)/2);*/
+    position: sticky;
+    top: calc((100vh - 50rem)/2);
 
 }
 
@@ -41,22 +38,6 @@
     font-size: 2rem;
     text-align: center;
 }
-/* #introduction-section .panel .panel__animated__item{
-    animation-timing-function: ease;
-    animation-fill-mode: both;
-    animation-range:cover 10% cover 100%;
-    animation-timeline:--card-section;
-
-} */
-
-/*#introduction-section .card__text .animation-layer{*/
-/*    background-color: white;*/
-/*    position: absolute;*/
-
-/*    width: 100%;*/
-/*    bottom:-2rem;*/
-/*    animation-name: grow-layer;*/
-/*}*/
 #introduction-section .panel__ilustration{
     display: flex;
     align-items: center;
@@ -64,19 +45,19 @@
     position: relative;
     flex-grow: 1.5;
     flex-basis: 0;
-    animation-name: enter-by-left;
+
+    transform: translateX(25%);
+    opacity: 0;
+
 }
 #introduction-section .panel__ilustration.animated{
-    /*animation: enter-by-left ease-in-out both 1s;*/
+    animation: enter-by-left ease-in-out 1s both;
 }
 
 #introduction-section .panel__ilustration .main{
     object-fit: contain;
     object-position: center;
     height: 50%;
-    /* animation: appear-s var(--back-easing) both ; */
-    /* animation-timeline:view();shadow 2
-    animation-range:contain 0% cover 35%; */
 }
 
 #introduction-section .panel__ilustration .main.animated{
@@ -88,11 +69,6 @@
     position: absolute;
     height: 10rem;
     animation: float 2.5s var(--back-easing) infinite both;
-    /* animation-name: float;
-    animation-duration: 2.5s;
-    animation-timing-function: var(--back-easing);
-    animation-iteration-count: infinite;
-    animation-fill-mode: both; */
 }
 #introduction-section .panel__ilustration .secondary--first{
     animation-delay: 1s;
@@ -123,36 +99,12 @@
         filter: drop-shadow(10px 10px 0 var(--shadow-color)) drop-shadow(5px 5px 5px #0008);
     }
 }
-@keyframes fade-in-and-go {
-    0%{
-        opacity: 0;
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
-}
 
-/*@keyframes enter-by-left{*/
-/*    0%{*/
-/*        transform: translateX(50vw);*/
-/*    }*/
-/*    50% {*/
-/*        transform: translateX(0);*/
-/*        opacity: 1;*/
-/*    }*/
-/*    100%{*/
-
-/*        opacity: 0;*/
-/*        transform: translateX(50vw);*/
-/*    }*/
-/*}*/
 
 @keyframes enter-by-left {
     from{
-        transform: translateX(50vw);
+        opacity: 0;
+        transform: translateX(25%);
     }
     to{
         transform: translateX(0);

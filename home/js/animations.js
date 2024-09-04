@@ -3,8 +3,6 @@ const callback=(entries)=>{
     for(entry of entries){
         if (entry.isIntersecting) {
             entry.target.classList.add("animated")
-        } else {
-            entry.target.classList.remove("animated")
         }
     }
 }

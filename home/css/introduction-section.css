@@ -1,9 +1,10 @@
 #introduction-section{
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
-    max-width: 1080px;
 
 }
 #introduction-section .title{
@@ -15,6 +16,7 @@
 /*-----------------CARD SECTION----------------------*/
 #introduction-section .panel__container{
     height: 150vh;
+    max-width: 1080px;
     view-timeline:--card-section;
 }
 
@@ -125,7 +127,8 @@
 
 @keyframes enter-by-left{
     0%{
-        transform: translateX(50vw);
+        opacity: 0;
+        transform: translateX(25%);
     }
     50% {
         transform: translateX(0);
@@ -134,7 +137,7 @@
     100%{
 
         opacity: 0;
-        transform: translateX(50vw);
+        transform: translateX(25%);
     }
 }
 

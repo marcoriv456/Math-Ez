@@ -1,17 +1,4 @@
-export  default  function anim_init_tool_section(){
-
-    function anim_init__common(){
-        const callback=(entries)=> {
-            for (let entry of entries) {
-                if (entry.isIntersecting)
-                    entry.target.classList.add("animated")
-            }
-        }
-        const observer= new IntersectionObserver(callback, {rootMargin:"0px 10000px 0px 10000px"}   )
-        const items=document.querySelectorAll("#tool-section .to_animate")
-        items.forEach((item)=>observer.observe(item))
-    }
-
+export default function anim_init_tool_section(){
     function anim_init__title_color_change(){
         const title=document.querySelector("#tool-section .title");
 
@@ -26,12 +13,9 @@ export  default  function anim_init_tool_section(){
         const observer=new IntersectionObserver(callback,{threshold:.4});
 
         const items=document.querySelectorAll("#tool-section .panel-container")
-        for(let container of items){
-            observer.observe(container)
-        }
+        items.forEach(item=>observer.observe(item))
     }
 
-    anim_init__common()
     anim_init__title_color_change()
 }
 

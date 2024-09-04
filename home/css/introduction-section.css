@@ -1,4 +1,6 @@
 #introduction-section{
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,6 +18,7 @@
 #introduction-section .panel__container{
      /*height: 150vh;*/
     /* view-timeline:--card-section; */
+    max-width: 1080px;
 }
 
 #introduction-section .panel{
@@ -46,6 +49,14 @@
 
 } */
 
+/*#introduction-section .card__text .animation-layer{*/
+/*    background-color: white;*/
+/*    position: absolute;*/
+
+/*    width: 100%;*/
+/*    bottom:-2rem;*/
+/*    animation-name: grow-layer;*/
+/*}*/
 #introduction-section .panel__ilustration{
     display: flex;
     align-items: center;
@@ -53,8 +64,7 @@
     position: relative;
     flex-grow: 1.5;
     flex-basis: 0;
-    /*left: 50vw;*/
-    /* animation-name: enter-by-left; */
+    animation-name: enter-by-left;
 }
 #introduction-section .panel__ilustration.animated{
     /*animation: enter-by-left ease-in-out both 1s;*/
@@ -85,17 +95,17 @@
     animation-fill-mode: both; */
 }
 #introduction-section .panel__ilustration .secondary--first{
-     animation-delay: 1s;
+    animation-delay: 1s;
     right: 3rem;
     top:7rem;
 }
 #introduction-section .panel__ilustration .secondary--second{
-     animation-delay: 0.7s;
+    animation-delay: 0.7s;
     left: 3rem;
     top: 50%;
 }
 #introduction-section .panel__ilustration .secondary--third{
-     animation-delay: 0.5s;
+    animation-delay: 0.5s;
     right: 3rem;
     bottom: 2rem;
 }
@@ -146,8 +156,9 @@
     }
     to{
         transform: translateX(0);
+        opacity: 1;
     }
-    
+
 }
 
 .main--green{

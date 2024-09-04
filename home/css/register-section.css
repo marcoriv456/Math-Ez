@@ -1,5 +1,9 @@
 #register-section{
+    width: 100%;
     height: 400vh;
+
+    display: flex;
+    justify-content: center;
 }
 #register-section .register__animated-item{
     --animation-delay: 0%;
@@ -9,8 +13,8 @@
     animation-range:cover calc(0% + var(--animation-delay)) contain calc(35% + var(--animation-delay));
 }
 #register-section .register__container{
+    width: 100%;
     height: 100vh;
-    width: 100vw;
     max-width: 1080px;
 
     position: sticky;

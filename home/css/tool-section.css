@@ -12,6 +12,8 @@
 #tool-section .title{
     font-size: 2rem;
     background-color: #6babff;
+
+    transition: background-color .5s ease;
 }
 
 #tool-section .title span{
@@ -53,7 +55,7 @@
     filter: drop-shadow(1rem 1rem 0 var(--panel-theme-color));
 }
 #tool-section .panel >img.animated{
-    animation: slide__from-left 1s ease;
+    animation: slide__from-left .5s ease;
 }
 
 

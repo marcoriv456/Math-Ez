@@ -1,8 +1,10 @@
 header{
-    height: 10rem;
+    height: 6rem;
     padding: 0 4rem;
-    position: relative;
-    z-index: 10;
+
+    position: sticky;
+    top: 0;
+    z-index: 20;
 
     display: flex;
     justify-content: space-between;

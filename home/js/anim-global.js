@@ -3,6 +3,8 @@ export default function anim_init_global(){
         for (let entry of entries) {
             if (entry.isIntersecting) {
                 entry.target.classList.add("animated")
+            }else{
+                entry.target.classList.remove("animated")
             }
         }
     }

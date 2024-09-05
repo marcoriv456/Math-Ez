@@ -26,7 +26,7 @@
 /*-----------------PANEL CONTAINER-----------------*/
 #tool-section .panel-container{
     max-width: 1080px;
-    height: 100vh;
+    height: 150vh;
     position: relative;
 }
 /*-----------------PANEL CONTAINER-----------------*/
@@ -37,6 +37,8 @@
 #tool-section .panel{
     height: fit-content;
     padding: 2rem;
+    position: sticky;
+    top: 12rem;
 
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -110,9 +112,7 @@
     animation-delay: .6s;
 }
 
-#tool-section .panel__feature:hover{
-    transform: scale(1.1);
-}
+
 
 #tool-section .panel__feature img{
     width: 100%;
@@ -140,6 +140,8 @@
 /*------------PANEL FEATURES------------*/
 /*------------PANEL IN DEVELOPMENT ADVICE------------*/
 #tool-section .panel-container .panel__in-development-advice{
+
+
     width: 30rem;
     padding: 2rem;
     border-radius: 20px;
@@ -150,7 +152,7 @@
 
     display: grid;
     grid-template: auto auto/1fr 2fr;
-
+    display: none;
     background-color: #FFE436;
 
     opacity: 0;

@@ -395,9 +395,34 @@
             </section>
 
         </main>
-        <section class="to_animate" id="register-section">
+
+        <section id="register-section" class="to_animate">
             <div class="register__container to_animate">
-                <div class="register">
+                <div id="login">
+                    <h2>Inicia sesion</h2>
+                    <p>Inicia sesion con tu cuenta de MathEz.</p>
+                    <form action="#">
+                        <label>
+                            Correo electronico o usuario
+                            <input type="text">
+                        </label>
+
+                        <label >
+                            Contraseña:
+                            <input type="password">
+                        </label>
+                        <input type="submit" value="Inciar sesion">
+
+                        <span>¿No tienes una cuenta? <a href="#register">Registrate</a></span>
+                        
+                    </form>
+                    <a href="#" class="other-socials">
+                        <img src="res/register/google-icon.png" alt="">
+                        Iniciar sesion con gooole
+                    </a>
+                </div>
+
+                <div id="register">
                     <h2>¡Crea una cuenta hoy mismo!</h2>
                     <p>Crea una cuenta en MathEz para acceder a todas las funciones.</p>
                     <form action="#">
@@ -427,7 +452,10 @@
                         </label>
                         <input type="submit">
                     </form>
+                    <span>¿Ya tienes cuenta? <a href="#login">Inicia sesion.</a></span>
+
                 </div>
+
             </div>
         </section>
 

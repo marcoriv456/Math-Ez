@@ -1,77 +1,114 @@
 #register-section{
     width: 100%;
-    box-shadow: -2px 2px 1rem #0006;
+    padding: 1rem;
+    
     position: relative;
     z-index: 10;
-    padding: 1rem;
+
     background-color: white;
+    box-shadow: -2px 2px 1rem #0006;
 }
 #register-section .register__container{
     width: 100%;
     max-width: 1080px;
-    margin-top: 6rem;
-
     position: sticky;
-    top: 12rem;
+    top: 7rem;
 
     display: flex;
     align-items: center;
+
     opacity: 0;
+
+    overflow-x: hidden;
 }
 #register-section .register__container.animated{
     animation: fade-in 1s ease forwards;
 }
 
-#register-section .register{
-    flex-grow: 1;
-    flex-basis: 0;
+#register-section .register__container >*{
+    min-width: 100%;
+    max-width: 100%;
 
     display: flex;
     flex-direction: column;
-
-    --animation-delay: 5%;
-    animation-name: slide__from-bottom;
+    align-items: center;
 }
-#register-section .register h2,
-#register-section .register p{
+#register-section h2,
+#register-section p{
     text-align: center;
 }
 
-#register-section .register h2{
+#register-section h2{
     font-size: 3rem;
 }
-#register-section .register p{
+#register-section  p{
     font-size: 2rem;
 }
 
-#register-section .register form{
+#register-section form{
+    width: 100%;
+    padding: 3rem;
+
     display: flex;
     flex-direction: column;
-    padding: 3rem;
     gap: 1rem;
+
     font-size: 1.2rem;
 }
-#register-section .register form label{
+#register-section form label{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
-#register-section .register form label input{
+#register-section form label input{
     height: 2.5rem;
 
-    border-radius: 5px;
+    position: relative;
+
     border: 1px solid #757575;
+    border-radius: 5px;
+
     box-shadow: 0.5rem 0.5rem 0 #8DB5FF;
 }
 
-#register-section .register form input[type=submit]{
+#register-section form input[type=submit]{
     padding: 1rem 4rem;
-    font-size: inherit;
+
     align-self: start;
-    background-color: #8DB5FF;
-    color: white;
+
     border: none;
     border-radius: 5px;
+
+    font-size: inherit;
+    color: white;
+
+    background-color: #8DB5FF;
 }
 
+#register-section span{
+    width: 100%;
+
+    font-size: 1.5rem;
+}
+#register-section .other-socials{
+    height: 4rem;
+    width: fit-content;
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+
+    background-color: white;
+}
+#register-section .other-socials img{
+    height: 100%;
+}
 

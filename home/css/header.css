@@ -115,6 +115,34 @@ header nav a{
 }
 
 
+#tool-section-nav-selector li a:hover{
+    background-color: var(--section-color);
+}
+#tool-section-nav-selector li a[href="#container--algebra"]{
+    --section-color:#F4A04D;
+}
+#tool-section-nav-selector li a[href="#container--calculus"]{
+    --section-color: #f44d4d;
+}
+#tool-section-nav-selector li a[href="#container--logic"]{
+    --section-color: #4df450;
+}
+#tool-section-nav-selector li a[href="#container--graphics"]{
+    --section-color: #4ddbf4;
+}
+#tool-section-nav-selector li a[href="#container--measures"]{
+    --section-color: #4d7cf4;
+}
+#tool-section-nav-selector li a[href="#container--statistics"]{
+    --section-color: #8a4df4;
+}
+
+
+
+
+
+
+
 #tool-section-nav-selector input{
     display: none;
 }

@@ -52,17 +52,19 @@ header nav a{
     color: black;
 }
 
-/**/
 
 #tool-section-nav-selector{
+    position: relative;
+
     display: flex;
     justify-content: center;
-    position: relative;
+
     font-size: 1.5rem;
 }
 #tool-section-nav-selector label{
-    border-radius: 5px;
     padding: 1rem;
+
+    border-radius: 5px;
     background-color: white;
 }
 #tool-section-nav-selector label:hover{
@@ -72,13 +74,16 @@ header nav a{
 #tool-section-nav-selector .arrow{
     width: 0;
     height: 0;
+    margin-left: 0.5rem;
 
     position: relative;
     top: 0.3rem;
+
     display: inline-block;
-    margin-left: 0.5rem;
+
     border: 0.8rem solid transparent;
     border-right-color: black;
+
     transition: transform 0.5s ease;
 }
 
@@ -136,12 +141,6 @@ header nav a{
 #tool-section-nav-selector li a[href="#container--statistics"]{
     --section-color: #8a4df4;
 }
-
-
-
-
-
-
 
 #tool-section-nav-selector input{
     display: none;

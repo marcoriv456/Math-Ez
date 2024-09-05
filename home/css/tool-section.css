@@ -91,13 +91,23 @@
 
     text-decoration: none;
     color: black;
-
-    transition: transform .5s ease;
 }
 
 #tool-section .panel__feature__list li{
+    height: fit-content;
+    border-radius: 10px;
+    background-color: white;
+
+
     opacity: 0;
     translate:30%;
+    transition: transform .5s ease, box-shadow .5s ease, z-index 0s;
+}
+#tool-section .panel__feature__list li:hover{
+    outline: 1px solid black;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px #0006;
+    z-index: 10;
 }
 #tool-section .panel__feature__list li.animated{
     animation: slide__from-right 1s ease both, fade-in 1s ease both;

@@ -16,95 +16,11 @@
 
     display: flex;
     align-items: center;
-}
-
-
-/*---------------ILUSTRATION---------------*/
-#register-section figure{
-    flex-grow: 1;
-    flex-basis: 0;
-    min-height: 720px;
-    max-height: 720px;
-    position: relative;
-
     opacity: 0;
 }
-#register-section figure img{
-    --shadow-color: none;
-    --size: none;
-    --shadow-proportion: calc(var(--size) * 0.05);
-
-    width: var(--size);
-    height: var(--size);
-
-    position: absolute;
-    object-fit: contain;
-
-    filter: drop-shadow( var(--shadow-proportion) var(--shadow-proportion) 0 var(--shadow-color));
-
-    animation: float 2.5s infinite var(--back-easing);
+#register-section .register__container.animated{
+    animation: fade-in 1s ease forwards;
 }
-
-
-#register-section figure img:nth-child(1){
-    --size: 12rem;
-
-    right: 1rem;
-    top: 2.5rem;
-    animation-delay: .2s;
-}
-
-#register-section figure img:nth-child(2){
-    --size: 8rem;
-
-    top: 8rem;
-    left: 9rem;
-    animation-delay: .4s;
-}
-
-#register-section figure img:nth-child(3){
-    --size: 21rem;
-
-    top: 17rem;
-    right: 4rem;
-    animation-delay: .6s;
-}
-#register-section figure img:nth-child(4){
-    --size: 13rem;
-
-    bottom: 15rem;
-    left: 4rem;
-    animation-delay: .8s;
-}
-#register-section figure img:nth-child(5){
-    --size: 8rem;
-
-    bottom: 9rem;
-    right: 9rem;
-    animation-delay: 1s;
-}
-
-
-#register-section figure .algebra{
-    --shadow-color:#F4A04D;
-}
-
-#register-section figure .calculus{
-    --shadow-color:#f44d4d;
-}
-
-#register-section figure .logic{
-    --shadow-color:#4df450;
-}
-#register-section figure .graphics{
-    --shadow-color:#4ddbf4;
-}
-
-#register-section figure .statistics{
-    --shadow-color: #8a4df4;
-}
-/*---------------ILUSTRATION---------------*/
-
 
 #register-section .register{
     flex-grow: 1;
@@ -115,7 +31,6 @@
 
     --animation-delay: 5%;
     animation-name: slide__from-bottom;
-    opacity: 0;
 }
 #register-section .register h2,
 #register-section .register p{
@@ -158,8 +73,5 @@
     border: none;
     border-radius: 5px;
 }
-#register-section .register.animated,
-#register-section figure.animated{
-    animation: fade-in 1s ease forwards;
-}
+
 

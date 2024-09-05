@@ -148,7 +148,7 @@ header nav a{
 #tool-section-nav-selector label:has(input:checked) + ul{
     height: calc(2.5rem *7);
 }
-#tool-section-nav-selector input:checked + .arrow{
+#tool-section-nav-selector input:checked ~ .arrow{
     transform: rotate(-90deg);
 }
 

@@ -65,6 +65,8 @@
     bottom: 0;
     font-size: 2rem;
 
+    text-wrap: nowrap;
+    
     animation: fade-in both ease 1s .5s;
 }
 

@@ -51,3 +51,77 @@ header nav a{
     text-decoration: none;
     color: black;
 }
+
+/**/
+
+#tool-section-nav-selector{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 1.5rem;
+}
+#tool-section-nav-selector label{
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: white;
+}
+#tool-section-nav-selector label:hover{
+    filter: brightness(0.9);
+}
+
+#tool-section-nav-selector .arrow{
+    width: 0;
+    height: 0;
+
+    position: relative;
+    top: 0.3rem;
+    display: inline-block;
+    margin-left: 0.5rem;
+    border: 0.8rem solid transparent;
+    border-right-color: black;
+    transition: transform 0.5s ease;
+}
+
+
+#tool-section-nav-selector ul{
+    height: 0;
+    width: 100%;
+
+    position: absolute;
+    top: 100%;
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 10px 10px;
+    background-color: white;
+
+    overflow: hidden;
+    transition: height 0.5s ease ;
+}
+#tool-section-nav-selector li{
+    width: 100%;
+    height: 3rem;
+    min-height: 2rem;
+}
+
+#tool-section-nav-selector li a{
+    width: 100%;
+    height: 100%;
+
+    display: inline-block;
+
+    background-color: white;
+    text-align: center;
+}
+
+
+#tool-section-nav-selector input{
+    display: none;
+}
+#tool-section-nav-selector label:has(input:checked) + ul{
+    height: calc(2.5rem *7);
+}
+#tool-section-nav-selector input:checked + .arrow{
+    transform: rotate(-90deg);
+}
+

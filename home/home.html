@@ -66,9 +66,24 @@
 
             <nav>
                 <ul>
-                    <li><a href="">Iniciar Sesion</a></li>
-                    <li><a href="">Registrarse</a></li>
-                    <li><a href="">Soporte</a></li>
+                    <li><a href="#introduction-section">Introduccion</a></li>
+                    <li>
+                        <nav id="tool-section-nav-selector">
+                            <label>
+                                <input type="checkbox">
+                                <span>Prueba MathEz</span> <span class="arrow"></span>
+                            </label>
+                            <ul>
+                                <li><a href="#container--algebra">Algebra</a></li>
+                                <li><a href="#container--calculus">Calculus</a></li>
+                                <li><a href="#container--logic">Logica</a></li>
+                                <li><a href="#container--graphics">Graficos</a></li>
+                                <li><a href="#container--measures">Medidas</a></li>
+                                <li><a href="#container--statistics">Estadistica</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li><a href="#footer">Contacto</a></li>
                 </ul>
             </nav>
         </header>
@@ -157,7 +172,7 @@
                 <h2 class="title">¡Prueba <span>Math</span>Ez ahora!</h2>
 
                 <div class="panel-section">
-                    <div class="panel-container">
+                    <div class="panel-container" id="container--algebra">
 
                         <section class="panel" id="panel--algebra">
                             <img class="to_animate" src="res/tools/algebra/algebra-icon.png" alt="">
@@ -191,7 +206,7 @@
                             <p>Con el tiempo se seguirán añadiendo calculadoras a esta sección.</p>
                         </dialog>
                     </div>
-                    <div class="panel-container">
+                    <div class="panel-container" id="container--calculus">
 
                         <section class="panel" id="panel--calculus">
                             <img class="to_animate" src="res/tools/calculus/calculus-icon.png" alt="">
@@ -225,7 +240,7 @@
                             <p>Con el tiempo se seguirán añadiendo calculadoras a esta sección.</p>
                         </dialog>
                     </div>
-                    <div class="panel-container">
+                    <div class="panel-container" id="container--logic">
 
                         <section class="panel" id="panel--logic">
                             <img class="to_animate" src="res/tools/logic/logic-icon.png" alt="Logica">
@@ -266,7 +281,7 @@
                             <p>Con el tiempo se seguirán añadiendo calculadoras a esta sección.</p>
                         </dialog>
                     </div>
-                    <div class="panel-container">
+                    <div class="panel-container" id="container--graphics">
 
                         <section class="panel" id="panel--graphics">
                             <img class="to_animate" src="res/tools/graphics/graphic-icon.png" alt="Grafica">
@@ -309,7 +324,7 @@
                             <p>Con el tiempo se seguirán añadiendo calculadoras a esta sección.</p>
                         </dialog>
                     </div>
-                    <div class="panel-container">
+                    <div class="panel-container" id="container--measures">
                         <section class="panel" id="panel--measures">
                             <img class="to_animate" src="res/tools/measures/measures-icon.png" alt="">
                             <h3>Medidas</h3>
@@ -335,7 +350,7 @@
                             <p>Con el tiempo se seguirán añadiendo calculadoras a esta sección.</p>
                         </dialog>
                     </div>
-                    <div class="panel-container">
+                    <div class="panel-container" id="container--statistics">
                         <section class="panel" id="panel--stadistics">
                             <img class="to_animate" src="res/tools/statistics/statistics-icon.png" alt="">
                             <h3>Estadistica</h3>
@@ -425,7 +440,7 @@
 
     </div>
 
-    <footer>
+    <footer id="footer">
         <figure class="logo">
             <img src="res/logo/math-ez-sigma-header.png" alt="">
             Math<span>Ez</span>
